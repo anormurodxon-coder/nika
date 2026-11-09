@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<title>NIKA — Handle channel publishing assistant</title>
+<style>
+  :root { --bg:#0b1220; --fg:#e5edf7; --muted:#9fb0c6; --accent:#29b6f6; }
+  body { margin:0; font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+  main { max-width:720px; margin:0 auto; padding:48px 16px; }
+  h1 { color:var(--accent); margin-bottom:4px; }
+  a { color:var(--accent); }
+  p.muted { color:var(--muted); }
+  nav a { margin-right:16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>NIKA</h1>
+  <p class="muted">A private publishing assistant for the YouTube channel <a rel="noopener noreferrer" href="https://www.youtube.com/@Handle-k8h">Handle (@Handle-k8h)</a>.</p>
+
+  <h2>What NIKA does</h2>
+  <p>NIKA is a personal tool used only by the owner of the Handle YouTube channel. It prepares short anime and manga news videos,
+  sends each video to the channel owner for review, and — only after the owner explicitly approves it — uploads the video
+  to the owner's own YouTube channel using the YouTube Data API.</p>
+  <ul>
+    <li>Only one Google account (the channel owner) uses this application.</li>
+    <li>NIKA only uploads videos (<code>youtube.upload</code> scope). It does not read, edit or delete other content.</li>
+    <li>Every upload requires a manual human approval.</li>
+  </ul>
+
+  <nav>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+
+  <p class="muted">NIKA uses YouTube API Services. By using NIKA you agree to the
+  <a rel="noopener noreferrer" href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+</main>
+</body>
+</html>
